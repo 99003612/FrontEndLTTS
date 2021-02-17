@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<style>
+  .required:after {
+    content:" *";
+    color: red;
+  }
+p.italic {
+  font style: italic;
+}
+
+</style>
+
+<body style="background-color:white">
+<div align="center" style="background-color:#3189C8;margin:10px;border:thin solid;border-width:5pxs";>
+<h2 style="color:white">Player Details</br></h2>
+</div>
+
+<div style="background: #99ccff";>
+<center>
+	
+        <table>
+            <tr>
+                <td><label class="required"><em>Name:</em></label> &nbsp;&nbsp;&nbsp;&nbsp;</td>
+                <td><input type="text" name="name" placeholder="Enter Name" autofocus required><br><br></td>
+            </tr>
+            <tr>
+                <td><label class="required"><em>DOB:</em></label>&nbsp;&nbsp;&nbsp;</td>
+                <td><input type="date" name="dob" placeholder="DD/MM/YYYY" required=><br><br></td>
+            </tr>
+            <tr>
+                <td><label class="required"><em>Age</em></label>&nbsp;&nbsp;&nbsp;</td>
+                <td><input type="number" name="age" placeholder="Enter your age" max="100" required="true"><br><br></td>
+            </tr>
+            <tr>
+                <td><label class="required"><em>Email Id</em></label>&nbsp;&nbsp;&nbsp;</td>
+                <td><input type="Email" name="email" placeholder="Enter email" required="true"><br><br></td>
+            </tr>
+            <tr>
+                <td><label class="required"><em>Country</em></label>&nbsp;&nbsp;&nbsp;</td>
+                <td><select>
+                    <option>India</option>
+                    <option>Bangladesh</option>
+                    <option>Mayanmar</option>
+                </select><br><br></td>
+            </tr>
+            <tr>
+                <td><label class="required"><em>Skill</em></label>&nbsp;&nbsp;&nbsp;</td>
+                <td><input type="checkbox" name="bat_ball" id="batting">
+                    <label for="batting">Batting</label>
+                    <input type="checkbox" name="bat_ball" id="bowling">
+                    <label for="bowling">Bowling</label><br><br></td>
+            </tr>
+            <tr>
+                <td><label ><em>Bat Style</em></label>&nbsp;&nbsp;&nbsp;</td>
+                <td><input type="radio" name="bstyle" id="rtbs" value="right_handed">
+                    <label for="rtbs">Right handed</label>&nbsp;
+                    <input type="radio" name="bstyle" id="ltbs" value="left_handed">
+                    <label for="ltbs">Left handed</label><br><br></td>
+            </tr>
+            <tr>
+                <td><label>Bowl Style:</label>&nbsp;&nbsp;&nbsp;</td>
+                <td><input type="radio" name="blstyle" id="rtbls" value="right_handed_b">
+                    <label for="rtbls">Right handed</label>&nbsp;
+                    <input type="radio" name="blstyle" id="ltbls" value="left_handed_b">
+                    <label for="ltbls">Left handed</label><br><br></td>
+            </tr>
+            <tr>
+                <td><label class="required"><em>Matches</em></label>&nbsp;&nbsp;&nbsp;</td>
+                <td><input type="number" name="mp" placeholder="Matches played in numbers" required="true" min="0"><br><br></td>
+            </tr>
+            <tr>
+                <td><label class="required"><em>Runs</em></label>&nbsp;&nbsp;&nbsp;</td>
+                <td><input type="number" name="run" placeholder="Runs Scored" required="true" min="0"><br><br></td>
+            </tr>
+            <tr>
+                <td><label class="required"><em>Wickets</em></label>&nbsp;&nbsp;&nbsp;</td>
+                <td><input type="number" name="wicket" placeholder="Wickets Taken" required="true" min="0"><br><br></td>
+            </tr>
+            <tr>
+                <td><label><em>Achievements</em></label>&nbsp;&nbsp;&nbsp;</td>
+                <td><textarea rows="7" cols="25" name="achieve" placeholder="Enter your Achievements"></textarea><br><br></td>
+            </tr>
+        </table>
+	</form>
+</center>
+</div>
+<div style="margin-top: 25px;background: #0099ff;padding-top: 10px;padding-bottom: 10px;">
+	<center>
+	<form action="file:///C:/Users/Mahavir/Desktop/link.html">
+	<input type="submit" name="sub" value="Submit">
+	<input type="reset" name="res" value="Reset">
+	</center>
+</div>
+</body>
+</html>
