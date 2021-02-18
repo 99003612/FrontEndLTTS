@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+var a =10;
+function fun1(){
+var a=document.getElementById("pass1").value;
+
+var b=document.getElementById("pass2").value;
+if(a==b)
+{
+	document.write("BOTH are Equal");
+	alert("Password Correct");
+}
+else
+{
+	document.write("BOTH are NOT Equal");
+	alert("Password Wrong");
+}
+
+}
+</script>
+</head>
+<body>
+<form>
+	Password:<input type="text" id="pass1"><br><br><span id="usr"></span>
+	Re-Type Password:<input type="text" id="pass2"><br><br><span id="usr1"></span>
+	<input type="submit" onclick="fun1()">
+</form>
+</body>
+</html>
