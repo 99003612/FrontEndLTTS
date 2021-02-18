@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Match Summary</title>
+	<script type="text/javascript">
+	function f2(){
+	    var R= document.getElementById("TeamA").value;
+	    var S= document.getElementById("TeamB").value;
+	    var T= document.getElementById("scoreA").value;
+	    var U= document.getElementById("scoreB").value;
+
+	    var V=T.split('/');
+	    var W=U.split('/');
+
+            if (R.length != 0 && S.length==0 && T.length==0 && U.length==0)
+      		{
+			if (V[0]>W[0]) {
+
+				document.getElementById("Win").innerHTML=R;
+			}        
+			else{
+				document.getElementById("Win").innerHTML=S;
+			}
+		         
+		 }  	
+       		else{
+			alert("Fill the necessary details");  	
+		         return false;   
+		    }      	
+		}
+	</script>
+</head>
+<style>
+body{
+	background-color: yellow;
+	
+}
+.required:after{
+	content: "*";
+	color: red;
+}
+</style>
+<body>
+
+<div style="width: 50%">
+			<h2>Match Summary</h2>
+			<table>
+				<tr>
+			<td><label for="name" class="required">Team A</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br><br></td>
+			<td><input type="text" id="TeamA" placeholder="Team A"   required autofocus max="50"><br><br></td>
+			</tr>
+			<tr>
+			<td><label for="name" class="required">Team B</label><br><br></td>
+			<td><input type="text"  id="TeamB" placeholder="Team B" required max="50"><br><br></td>
+			</tr>
+			<tr>
+			<td><label for="date" class="required"> Date </label><br><br></td>
+            <td><input type="date"  id="date" placeholder="DD/MM/YYYY" required><br><br></td>
+		</tr>
+			<tr>
+			<td><label for="time" class="required"> Time </label><br><br></td>
+			<td><input type="time"  id="time" placeholder="HH:MM:SS" required><br><br></td>
+		</tr>
+		<tr>
+			<td><label for="name" class="required">Team A Score</label><br><br></td>
+			<td><input type="text"  id="scoreA" placeholder="Team A" required><br><br></td>
+			</tr>
+			<tr>
+			<td><label for="name" class="required">Team B Score</label><br><br></td>
+			<td><input type="text"  id="scoreB" placeholder="Team B" required><br><br></td>
+			</tr>
+		</table>
+		<input type="submit" id="save" value="Save" onclick="f2()">
+		<h3>Winning Team: <br></h3><p id="Win"></p>
+	
+</div>
+</body>
+
+</html>
